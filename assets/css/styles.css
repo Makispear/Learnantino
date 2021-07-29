@@ -83,3 +83,33 @@ header nav a {
     bottom: 20px;
     right: 100px;
 }
+
+/* main content  */
+
+main {
+    padding: 10px 100px;
+
+}
+.about-section {
+    display: flex;
+}
+
+.section-title {
+    font-size: 40px;
+    text-align: right;
+}
+
+.about-section > * {
+    padding: 10px;
+}
+
+.about-section p {
+    margin: 10px;
+    line-height: 1.5;
+}
+
+.about-section div {
+    width: 30%;
+    border-right: 2px solid;
+}
+
