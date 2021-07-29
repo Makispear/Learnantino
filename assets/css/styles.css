@@ -1,0 +1,62 @@
+/* Generic styling  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-font : Helvetica, Arial, sans-serif;
+    --coding-font : 'Source Code Pro', monospace;
+    --primary-color: 100, 246, 230;
+}
+
+body {
+    color: rgb(var(--primary-color));
+    font-family: var(--primary-font);
+}
+
+/* navigation section  */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    padding: 5px 0;
+}
+
+header div {
+    background-color: rgb(var(--primary-color));
+}
+
+header h1 a {
+    font-size: 42px;
+    padding-left: 100px;
+    color: grey;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 0 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 22px;
+    padding: 2px 5px;
+    border-bottom: 3px solid rgb(var(--primary-color));
+}
