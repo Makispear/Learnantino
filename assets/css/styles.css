@@ -6,9 +6,10 @@
 }
 
 :root {
-    --primary-font : Helvetica, Arial, sans-serif;
+    --primary-font : Arial, Helvetica, sans-serif;
     --coding-font : 'Source Code Pro', monospace;
-    --primary-color: 100, 246, 230;
+    --secondary-color: 100, 246, 230;
+    --primary-color: 86, 100, 100;
 }
 
 body {
@@ -17,23 +18,24 @@ body {
 }
 
 /* navigation section  */
-
 header {
     display: flex;
     justify-content: space-between;
-    background-color: grey;
+    background-color: rgba(var(--primary-color));
     padding: 5px 0;
 }
 
 header div {
-    background-color: rgb(var(--primary-color));
+    background-color: rgb(var(--secondary-color));
 }
 
 header h1 a {
-    font-size: 42px;
+    font-size: 45px;
     padding-left: 100px;
-    color: grey;
+    color: rgba(var(--primary-color));
     text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: lighter;
 }
 
 nav {
@@ -55,8 +57,29 @@ header nav ul li {
 
 header nav a {
     text-decoration: none;
-    color: var(--primary-color);
-    font-size: 22px;
+    color: rgb(var(--secondary-color));
+    font-size: 20px;
     padding: 2px 5px;
-    border-bottom: 3px solid rgb(var(--primary-color));
+    border-bottom: 3px solid rgb(var(--secondary-color));
+}
+
+/* Hero section  */
+.hero-section {
+    position: relative;
+    background-image: url("../images/hero-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+}
+
+.hero-section div {
+    position: absolute;
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(var(--secondary-color));
+    width: auto;
+    font-size: 30px;
+    bottom: 20px;
+    right: 100px;
 }
