@@ -42,7 +42,7 @@ nav {
     display: flex;
     justify-content: space-between;
     margin-right: 100px;
-
+    
 }
 
 header nav ul {
@@ -66,7 +66,8 @@ header nav a {
 /* Hero section  */
 .hero-section {
     position: relative;
-    background-image: url("../images/hero-img.jpg");
+    background-image: 
+    url("../images/hero-img.jpg");
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
@@ -137,20 +138,102 @@ main {
     width: 100%;
 }
 
-.project-container a {
+.project-container div {
     border: 5px solid rgb(var(--secondary-color));
     margin: 10px;
     overflow: hidden;
 }
 
 .surf-report {
+    position: relative;
     width: 100%;
     height: 500px;
-
 }
 
 .led-wall, .calculator, .pastel-puzzle, .run-buddy {
+    position: relative;
     width: 47%;
     height: 200px;
+}
 
+.led-wall {
+    background: url("https://onewayeventproductions.com/wp-content/uploads/2020/02/AdobeStock_289192813.jpeg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.run-buddy {
+    background-image: url("https://images05.military.com/sites/default/files/media/military-fitness/2014/07/improving-your-pft-run-time-image.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 1s;
+}
+
+.run-buddy:hover {
+    /* background: rgb(0,0,0); */
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.716701646478904) 0%, rgba(0,0,0,0.16488091818758754) 50%, rgba(0,0,0,0.7195027669270833) 100%), 
+    url("https://images05.military.com/sites/default/files/media/military-fitness/2014/07/improving-your-pft-run-time-image.jpg");
+    
+
+}
+
+.surf-report::before, .led-wall::before, .calculator::before, .pastel-puzzle::before, .run-buddy::before {
+    position: absolute;
+    border: 5px solid rgb(var(--secondary-color));
+    height: 25px;
+    width: 200px;
+    bottom: 40px;
+    left: 0px;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: rgb(var(--secondary-color));
+}
+
+.surf-report::after, .led-wall::after, .calculator::after, .pastel-puzzle::after, .run-buddy::after {
+    position: absolute;
+    border: 5px solid rgb(var(--secondary-color));
+    height: 20px;
+    width: 200px;
+    bottom: 10px;
+    left: 0px;
+    background-color: rgb(var(--secondary-color));
+}
+
+.surf-report::before {
+    content: "Surf Report";
+}
+.surf-report::after {
+    content: "Mern Stack";
+}
+
+.led-wall::before {
+    content: "Led Wall";
+}
+
+.calculator::before {
+    content: "Calculator";
+}
+
+.pastel-puzzle::before {
+    content: "Pastel Puzzle";
+}
+
+.run-buddy::before {
+    content: "Run Buddy";
+}
+
+.led-wall::after {
+    content: "Node.IoT";
+}
+
+.calculator::after {
+    content: "React | Javascript | CSS";
+}
+.pastel-puzzle::after {
+    content: "MERN stack";
+}
+.run-buddy::after {
+    content: "HTML | CSS";
 }
