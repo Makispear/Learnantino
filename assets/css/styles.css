@@ -305,6 +305,7 @@ main {
 
 .surf-report::before {
     content: "Surf Report";
+    border-radius: 0px 10px 0px 0px;
 }
 .surf-report::after {
     content: "Mern Stack";
@@ -312,6 +313,7 @@ main {
 
 .led-wall::before {
     content: "Led Wall";
+    border-radius: 0px 10px 0px 0px;
 }
 
 .led-wall::after {
@@ -320,6 +322,7 @@ main {
 
 .calculator::before {
     content: "Calculator";
+    border-radius: 0px 10px 0px 0px;
 }
 
 .calculator::after {
@@ -336,6 +339,7 @@ main {
 
 .run-buddy::before {
     content: "Run Buddy";
+    border-radius: 0px 10px 0px 0px;
 }
 
 .run-buddy::after {
@@ -407,8 +411,23 @@ footer {
     height: 100%;
 }
 
+/* media queries for screen sizes */
+/* screen =< 980px  */
 @media screen and (max-width: 980px) {
+    header h1 a {
+        font-size: 30px;
+        padding-left: 20px;
+    }
 
+    header nav {
+        margin-right: 20px;
+
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+        border-bottom: 2px solid;
+    }
 }
 
 @media screen and (max-width: 768px) {
