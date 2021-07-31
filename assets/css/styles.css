@@ -19,15 +19,7 @@ body {
     font-family: var(--primary-font);
     background-color: rgb(228, 220, 245);
 }
-                /* for testing  */
-                body::before {
-                    position: absolute;
-                    right: 10px;
-                    bottom: 10px;
-                    content: "Images taken from Google Searches";
-                    font-size: 10px;
-                    color: rgba(0, 0, 0, 0.5);
-                }
+
 /* navigation section  */
 header {
     display: flex;
@@ -292,6 +284,7 @@ main {
     font-weight: bold;
     font-size: 1.2em;
     background-color: rgb(var(--secondary-color));
+    opacity: 0.9;
 }
 
 .surf-report::after, .led-wall::after, .calculator::after, .pastel-puzzle::after, .run-buddy::after {
@@ -302,6 +295,7 @@ main {
     bottom: 10px;
     left: 0px;
     background-color: rgb(var(--secondary-color));
+    opacity: 0.9;
 }
 
 .surf-report::before {
@@ -351,16 +345,10 @@ main {
 footer {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 10px;
+    padding: 20px 0px 30px;
     width: 100%;
     justify-content: space-between;
-}
-
-/* .contact-info {
-    width: 70%;
-} */
-footer {
-    width: 100%;
+    height: auto;
 }
 
 .footer-links {
@@ -499,7 +487,7 @@ footer {
 
     .footer-links ul li {
         flex-wrap: wrap;
-        padding: 30px;
+        padding: 10px;
     }
 }
 
@@ -587,8 +575,76 @@ footer {
         padding: 10px 0px;
     }
 
+    /* work section  */
+    .surf-report::before, .led-wall::before, .calculator::before, .pastel-puzzle::before, .run-buddy::before {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: auto;
+        width: auto;
+        border-radius: 0;
+        opacity: 0.9;
+        padding: 0;
+    }
+
+    .surf-report::after, .led-wall::after, .calculator::after, .pastel-puzzle::after, .run-buddy::after {
+        position: absolute;
+        left: 0;
+        /* right: 0; */
+        height: auto;
+        width: auto;
+        border-radius: 0;
+        opacity: 1;
+    }
+
+    /* contact me section  */
+    footer {
+        text-align: center;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-links {
+        width: 100%;
+    }
+
+    .footer-links li {
+        padding: 5px;
+    }
+
+    .footer-links a {
+        padding: 0;
+    } 
+
+    footer .section-title {
+        text-align: center;
+    }
 }
 
-@media screen and (max-width: 575px) {
 
+@media screen and (max-width: 575px) {
+    /* header section  */
+    nav {
+        width: 80vw;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        padding: 3px;
+    }
+
+    /* hero section  */
+
+    /* about section  */
+
+    /* work section  */
+    .project-container a {
+        width: 100%;
+        padding: 0;
+    }
 }
