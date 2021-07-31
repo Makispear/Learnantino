@@ -372,13 +372,16 @@ footer {
 
 .footer-links ul {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     width: 100%;
 }
 
 .footer-links ul li {
     list-style: none;
+    padding: 10px 20px;
+
 }
 
 .footer-links ul li a {
@@ -484,9 +487,105 @@ footer {
         background-position: center;
         background-size: cover;
     } 
+
+    /* contact section  */
+    footer h2 {
+        font-size: 30px;
+    }
+
+    .footer-links ul {
+        flex-direction: row;
+    }
+
+    .footer-links ul li {
+        flex-wrap: wrap;
+        padding: 30px;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    /* header section  */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    header div {
+        align-self: start;
+    }
+
+    nav {
+        margin: 10px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+    /* hero section  */
+    .hero-section div {
+        right: 20px;
+    }
+    
+    .hero-section div {
+        position: absolute;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        bottom: 10px;
+        opacity: 0.8;
+        text-align: center;
+    }
+
+    .hero-section div h2 {
+        opacity: 1;
+    }
+
+    .hero-section div h2 {
+        font-size: 20px;
+    }
+
+    /* main section  */
+    main {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* about section  */
+
+    section {
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+    
+    .section-title {
+        width: auto;
+        text-align: center;
+        border-bottom: 2px solid;
+        border-right: none;
+    }
+    
+    .about-section, .work-section, footer {
+        align-items: center;
+        padding: 0;
+        margin: 30px 0px;
+    }
+
+    .section-title h2 {
+        text-align: center;
+    }
+
+    .para {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .about-section p {
+        margin: 0;
+        padding: 10px 0px;
+    }
 
 }
 
