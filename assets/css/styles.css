@@ -14,16 +14,26 @@
 }
 
 body {
+    position: relative;
     color: rgb(var(--primary-color));
     font-family: var(--primary-font);
+    background-color: rgb(228, 220, 245);
 }
-
+                /* for testing  */
+                body::before {
+                    position: absolute;
+                    right: 10px;
+                    bottom: 10px;
+                    content: "Images taken from Google Searches";
+                    font-size: 10px;
+                    color: rgba(0, 0, 0, 0.5);
+                }
 /* navigation section  */
 header {
     display: flex;
     justify-content: space-between;
     background-color: rgba(var(--primary-color));
-    padding: 5px 0;
+    padding: 5px 0 10px 0;
 }
 
 header div {
@@ -31,7 +41,7 @@ header div {
 }
 
 header h1 a {
-    font-size: 45px;
+    font-size: 50px;
     padding: 0px 10px 0px 100px;
     color: rgba(var(--primary-color));
     text-decoration: none;
@@ -98,7 +108,7 @@ header nav a:hover::before {
 .hero-section {
     position: relative;
     background-image: 
-    url("https://wallpapercave.com/wp/wp2089896.jpg");
+    url("/assets/images/hero-img.jpg");
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
@@ -135,7 +145,7 @@ main {
     font-size: 40px;
     text-align: right;
     width: 20%;
-    border-right: 2px solid;
+    border-right: 5px solid;
     padding: 10px;
 }
 
@@ -144,7 +154,7 @@ main {
     line-height: 1.5;
 }
 
-.about-section article {
+.about-section .para {
     margin: 10px;
     width: 75%;
 }
@@ -190,7 +200,7 @@ main {
 
 .surf-report {
     background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%), 
-    url("https://www.outerbanksblue.com/blog/wp-content/uploads/2018/09/aqua-mac-wallpaper-sea-7862.jpg");
+    url("/assets/images/surf-report.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 1000px;
@@ -199,7 +209,7 @@ main {
 
 .surf-report:hover {
     background-image: linear-gradient(90deg, rgba(0,0,0,0.716701646478904) 0%, rgba(0,0,0,0.16488091818758754) 50%, rgba(0,0,0,0.7195027669270833) 100%), 
-    url("https://www.outerbanksblue.com/blog/wp-content/uploads/2018/09/aqua-mac-wallpaper-sea-7862.jpg");
+    url("/assets/images/surf-report.jpg");
     background-position: center bottom;
 }
 
@@ -222,7 +232,7 @@ main {
 
 .led-wall {
     background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%), 
-    url("https://m.media-amazon.com/images/I/81FPCmiL+uL._AC_SX466_.jpg");
+    url("/assets/images/led-wall.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 500px;
@@ -232,7 +242,7 @@ main {
 
 .led-wall:hover {
     background-image: linear-gradient(90deg, rgba(0,0,0,0.716701646478904) 0%, rgba(0,0,0,0.16488091818758754) 50%, rgba(0,0,0,0.7195027669270833) 100%), 
-    url("https://m.media-amazon.com/images/I/81FPCmiL+uL._AC_SX466_.jpg");
+    url("/assets/images/led-wall.jpg");
     background-size: 550px;
     background-position: center top;
 
@@ -241,7 +251,7 @@ main {
 
 .pastel-puzzle {
     background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%), 
-    url("https://previews.123rf.com/images/dip/dip0712/dip071200164/2256837-jigsaw-puzzle-pattern.jpg");
+    url("/assets/images/pastel-puzzle.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 500px;
@@ -250,7 +260,7 @@ main {
 
 .pastel-puzzle:hover {
     background-image: linear-gradient(90deg, rgba(0,0,0,0.716701646478904) 0%, rgba(0,0,0,0.16488091818758754) 50%, rgba(0,0,0,0.7195027669270833) 100%), 
-    url("https://previews.123rf.com/images/dip/dip0712/dip071200164/2256837-jigsaw-puzzle-pattern.jpg");
+    url("/assets/images/pastel-puzzle.jpg");
     background-size: 550px;
 }
 
@@ -258,7 +268,7 @@ main {
 
 .run-buddy {
     background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%), 
-    url("https://images05.military.com/sites/default/files/media/military-fitness/2014/07/improving-your-pft-run-time-image.jpg");
+    url("/assets/images/run-buddy.jpg");
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 500px;
@@ -267,7 +277,7 @@ main {
 
 .run-buddy:hover {
     background-image: linear-gradient(90deg, rgba(0,0,0,0.716701646478904) 0%, rgba(0,0,0,0.16488091818758754) 50%, rgba(0,0,0,0.7195027669270833) 100%), 
-    url("https://images05.military.com/sites/default/files/media/military-fitness/2014/07/improving-your-pft-run-time-image.jpg");
+    url("/assets/images/run-buddy.jpg");
     background-size: 450px;
 }
 
@@ -304,34 +314,35 @@ main {
     content: "Led Wall";
 }
 
+.led-wall::after {
+    content: "Node.IoT";
+}
+
 .calculator::before {
     content: "Calculator";
+}
+
+.calculator::after {
+    content: "React | Javascript | CSS";
 }
 
 .pastel-puzzle::before {
     content: "Pastel Puzzle";
 }
 
+.pastel-puzzle::after {
+    content: "MERN stack";
+}
+
 .run-buddy::before {
     content: "Run Buddy";
 }
 
-.led-wall::after {
-    content: "Node.IoT";
-}
-
-.calculator::after {
-    content: "React | Javascript | CSS";
-}
-.pastel-puzzle::after {
-    content: "MERN stack";
-}
 .run-buddy::after {
     content: "HTML | CSS";
 }
 
 /* contact section  */
-
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -395,3 +406,5 @@ footer {
 .footer-links ul li a:hover::before {
     height: 100%;
 }
+
+
