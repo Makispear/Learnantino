@@ -9,7 +9,7 @@
 :root {
     --primary-font : Trebuchet MS;
     --coding-font : 'Source Code Pro', monospace;
-    --secondary-color: 100, 246, 230;
+    --secondary-color: 104, 226, 200;
     --primary-color: 86, 100, 100;
 }
 
@@ -65,7 +65,7 @@ header nav a {
     font-size: 20px;
     padding: 2px 5px;
     border-bottom: 3px solid rgb(var(--secondary-color));
-    transition: color 0.7s;
+    transition: color 0.2s;
 }
 
 header nav a:hover {
@@ -83,7 +83,7 @@ header nav a:before {
     position: absolute;
     bottom: 0;
     left: 0;
-    transition: height 0.7s;
+    transition: height 0.2s;
     z-index: -10;
 }
 
@@ -101,11 +101,12 @@ header nav a:hover::before {
 .hero-section {
     position: relative;
     background-image: 
-    url("/assets/images/hero-img.jpg");
+    margin: 0px 0px 30px 0;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 300px;
+    height: auto;
+    overflow: hidden;
 }
 
 .hero-section div {
@@ -117,6 +118,11 @@ header nav a:hover::before {
     font-size: 30px;
     bottom: 20px;
     right: 100px;
+    z-index: 10;
+}
+
+.hero-section img {
+    width: 100%;
 }
 
 /* main content  */
@@ -132,6 +138,8 @@ main {
     padding: 20px 10px;
     width: 100%;
     justify-content: space-between;
+    margin: 30px 0px;
+
 }
 
 .section-title {
@@ -144,7 +152,7 @@ main {
 
 .about-section p {
     margin: 10px;
-    line-height: 1.5;
+    line-height: 2;
 }
 
 .about-section .para {
@@ -159,6 +167,8 @@ main {
     padding: 20px 10px;
     width: 100%;
     justify-content: space-between;
+    margin: 30px 0px;
+
 }
 
 .projects {
@@ -193,152 +203,54 @@ main {
 
 .surf-report {
     background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%), 
-    url("/assets/images/surf-report.jpg");
+    /* url("/assets/images/surf-report.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: 1200px;
-    transition: background-image 0.5s, background-position 0.5s;
+    transition: background-image 0.2s, background-position 0.2s;
 }
 
-.surf-report:hover {
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.716701646478904) 0%, rgba(0,0,0,0.16488091818758754) 50%, rgba(0,0,0,0.7195027669270833) 100%), 
-    url("/assets/images/surf-report.jpg");
-    background-position: center bottom;
-}
 
 .calculator {
     background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%), 
-    url("https://c4.wallpaperflare.com/wallpaper/854/214/410/accounting-black-budget-calculating-wallpaper-preview.jpg");
+    /* url("https://c4.wallpaperflare.com/wallpaper/854/214/410/accounting-black-budget-calculating-wallpaper-preview.jpg"); */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 500px;
-    transition: background-image 0.5s, background-size 0.5s, background-position 0.5s;
-}
-
-.calculator:hover {
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.716701646478904) 0%, rgba(0,0,0,0.16488091818758754) 50%, rgba(0,0,0,0.7195027669270833) 100%), 
-    url("https://c4.wallpaperflare.com/wallpaper/854/214/410/accounting-black-budget-calculating-wallpaper-preview.jpg");
-    background-size: 500px;
-    background-position: center left;
-
+    transition: background-image 0.2s, background-size 0.2s, background-position 0.2s;
 }
 
 .led-wall {
     background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%), 
-    url("/assets/images/led-wall.jpg");
+    /* url("/assets/images/led-wall.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: 500px;
-    transition: background-size 0.5s, background-position 0.5s;
+    transition: background-size 0.2s, background-position 0.2s;
 
 }
 
-.led-wall:hover {
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.716701646478904) 0%, rgba(0,0,0,0.16488091818758754) 50%, rgba(0,0,0,0.7195027669270833) 100%), 
-    url("/assets/images/led-wall.jpg");
-    background-size: 550px;
-    background-position: center top;
-
-}
 
 
 .pastel-puzzle {
     background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%), 
-    url("/assets/images/pastel-puzzle.jpg");
+    /* url("/assets/images/pastel-puzzle.jpg"); */
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 500px;
-    transition: background-image 0.5s, background-size 0.5s;
+    transition: background-image 0.2s, background-size 0.2s;
 }
 
-.pastel-puzzle:hover {
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.716701646478904) 0%, rgba(0,0,0,0.16488091818758754) 50%, rgba(0,0,0,0.7195027669270833) 100%), 
-    url("/assets/images/pastel-puzzle.jpg");
-    background-size: 550px;
-}
 
 
 
 .run-buddy {
     background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%), 
-    url("/assets/images/run-buddy.jpg");
+    /* url("/assets/images/run-buddy.jpg"); */
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 600px;
-    transition: background-image 0.5s, background-size 0.5s;
-}
-
-.run-buddy:hover {
-    background-image: linear-gradient(90deg, rgba(0,0,0,0.716701646478904) 0%, rgba(0,0,0,0.16488091818758754) 50%, rgba(0,0,0,0.7195027669270833) 100%), 
-    url("/assets/images/run-buddy.jpg");
-    background-size: 500px;
-}
-
-.surf-report::before, .led-wall::before, .calculator::before, .pastel-puzzle::before, .run-buddy::before {
-    position: absolute;
-    border: 5px solid rgb(var(--secondary-color));
-    height: 25px;
-    width: 200px;
-    bottom: 40px;
-    left: 0px;
-    font-weight: bold;
-    font-size: 1.2em;
-    background-color: rgb(var(--secondary-color));
-    opacity: 0.9;
-}
-
-.surf-report::after, .led-wall::after, .calculator::after, .pastel-puzzle::after, .run-buddy::after {
-    position: absolute;
-    border: 5px solid rgb(var(--secondary-color));
-    height: 20px;
-    width: 200px;
-    bottom: 10px;
-    left: 0px;
-    background-color: rgb(var(--secondary-color));
-    opacity: 0.9;
-}
-
-.surf-report::before {
-    content: "Surf Report";
-    border-radius: 0px 10px 0px 0px;
-}
-.surf-report::after {
-    content: "Mern Stack";
-}
-
-.led-wall::before {
-    content: "Led Wall";
-    border-radius: 0px 10px 0px 0px;
-}
-
-.led-wall::after {
-    content: "Node.IoT";
-}
-
-.calculator::before {
-    content: "Calculator";
-    border-radius: 0px 10px 0px 0px;
-}
-
-.calculator::after {
-    content: "React | Javascript | CSS";
-}
-
-.pastel-puzzle::before {
-    content: "Pastel Puzzle";
-}
-
-.pastel-puzzle::after {
-    content: "MERN stack";
-}
-
-.run-buddy::before {
-    content: "Run Buddy";
-    border-radius: 0px 10px 0px 0px;
-}
-
-.run-buddy::after {
-    content: "HTML | CSS";
+    transition: background-image 0.2s, background-size 0.2s;
 }
 
 /* contact section  */
@@ -379,7 +291,7 @@ footer {
     color: rgb(var(--primary-color));
     border-bottom: 3px solid;
     z-index: 10;
-    transition: color 0.5s;
+    transition: color 0.2s;
     border-bottom: 3px solid rgba(var(--primary-color));
 }
 
@@ -397,7 +309,7 @@ footer {
     bottom: 0px;
     background-color: rgb(var(--primary-color));
     z-index: -10;
-    transition: height 0.5s;
+    transition: height 0.2s;
 
 }
 
@@ -426,6 +338,11 @@ footer {
         border-bottom: 2px solid;
     }
     /* Hero section  */
+
+    .hero-section {
+        width: 100%;
+        height: auto;
+    }
     .hero-section div h2 {
         font-size: 25px;
     }
@@ -448,6 +365,7 @@ footer {
     .about-section .para {
         margin: 10px;
         width: 75%;
+        line-height: 1.5;
     }
 
     /* work section  */
@@ -477,6 +395,10 @@ footer {
     } 
 
     /* contact section  */
+    footer {
+    margin: 30px 0px;
+    }
+
     footer h2 {
         font-size: 30px;
     }
@@ -514,6 +436,11 @@ footer {
     .hero-section div {
         right: 20px;
     }
+
+    .hero-section {
+        margin: 0px 0px 30px 0;
+        position: relative;
+    }
     
     .hero-section div {
         position: absolute;
@@ -523,14 +450,12 @@ footer {
         bottom: 10px;
         opacity: 0.8;
         text-align: center;
-    }
-
-    .hero-section div h2 {
-        opacity: 1;
+        max-width: 90%;
     }
 
     .hero-section div h2 {
         font-size: 20px;
+        color: rgba(var(--primary-color), 1);
     }
 
     /* main section  */
@@ -544,6 +469,9 @@ footer {
     section {
         flex-direction: column;
         justify-content: center;
+    }
+
+    .hero-section, footer, .work-section {
         padding: 10px;
     }
     
@@ -573,28 +501,24 @@ footer {
     .about-section p {
         margin: 0;
         padding: 10px 0px;
+        line-height: 1.5;
+
     }
 
     /* work section  */
-    .surf-report::before, .led-wall::before, .calculator::before, .pastel-puzzle::before, .run-buddy::before {
-        position: absolute;
-        left: 0;
-        right: 0;
-        height: auto;
-        width: auto;
-        border-radius: 0;
-        opacity: 0.9;
-        padding: 0;
+
+
+    /* accessibility  */
+    .project-frame img {
+        width: 100%;
     }
 
-    .surf-report::after, .led-wall::after, .calculator::after, .pastel-puzzle::after, .run-buddy::after {
-        position: absolute;
-        left: 0;
-        /* right: 0; */
-        height: auto;
-        width: auto;
-        border-radius: 0;
-        opacity: 1;
+    .surf-report {
+        height: 150px;
+    }
+
+    .led-wall, .calculator, .pastel-puzzle, .run-buddy {
+        height: 100px;
     }
 
     /* contact me section  */
@@ -641,10 +565,82 @@ footer {
     /* hero section  */
 
     /* about section  */
+    .about-section p {
+        line-height: 1;
+    }
 
     /* work section  */
     .project-container a {
         width: 100%;
         padding: 0;
     }
+
+    /* accessibility  */
+    .surf-report {
+        height: 100px;
+    }
+
+    .led-wall, .calculator, .pastel-puzzle, .run-buddy {
+        height: 100px;
+    }
+
+    /* Accessibility  */
+    .mobile-only {
+        visibility: visible;
+    }
+
+    .dekstop-only {
+        visibility: hidden;
+    }
+
+
 }
+
+/* Accessibility  */
+
+.project-container a {
+    box-shadow: 4px 4px 10px rgb(70, 70, 70);
+}
+
+.project-frame {
+    z-index: 5;
+}
+
+.project-frame img {
+    width: 150%;
+}
+
+
+.project-tag {
+    position: absolute;
+    z-index: 10;
+    bottom: 20px;
+    padding: 5px;
+    border-radius: 0px 10px 0px 0px;
+    background-color: rgb(var(--secondary-color));
+    box-shadow: 3px 3px 10px rgb(48, 48, 48);
+}
+
+.project-tag h3 {
+    font-size: 20px;
+}
+
+.gradient {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0) 46%, rgba(0,0,0,0.3329481450783438) 95%);
+    z-index: 20;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+}
+
+.gradient:hover {
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0.32174366328562676) 46%, rgba(0,0,0,0.9015755960587359) 95%);
+}
+
