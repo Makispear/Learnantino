@@ -584,20 +584,9 @@ footer {
         height: 100px;
     }
 
-    /* Accessibility  */
-    .mobile-only {
-        visibility: visible;
-    }
-
-    .dekstop-only {
-        visibility: hidden;
-    }
-
-
 }
 
 /* Accessibility  */
-
 .project-container a {
     box-shadow: 4px 4px 10px rgb(70, 70, 70);
 }
