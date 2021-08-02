@@ -1,3 +1,4 @@
+/* DESKTOP FIRST STYLING  */
 /* Generic styling  */
 * {
     padding: 0;
@@ -26,12 +27,15 @@ header {
     justify-content: space-between;
     background-color: rgba(var(--primary-color));
     padding: 5px 0 10px 0;
+    box-shadow: 5px 5px 5px rgb(39, 39, 39);
+    z-index: 9999;
 }
 
 header div {
     background-color: rgb(var(--secondary-color));
 }
 
+/* logo  */
 header h1 a {
     font-size: 50px;
     padding: 0px 10px 0px 100px;
@@ -68,34 +72,33 @@ header nav a {
     transition: color 0.2s;
 }
 
+/* navigation links effect */
 header nav a:hover {
     color: rgba(var(--primary-color));
     z-index: 9;
     border-bottom: 3px solid rgba(var(--secondary-color));
 }
-
-header nav a:before {
-    content: "";
-    width: 100%;
-    height: 0%;
-    border-bottom: 3px solid rgb(var(--secondary-color));
-    border-radius: 3px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: height 0.2s;
-    z-index: -10;
-}
-
-header nav a:hover::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: rgba(var(--secondary-color));
-    position: absolute;
-    bottom: 0;
-    border-bottom: 3px solid rgb(var(--secondary-color));
-}
+    header nav a:before {
+        content: "";
+        width: 100%;
+        height: 0%;
+        border-bottom: 3px solid rgb(var(--secondary-color));
+        border-radius: 3px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: height 0.2s;
+        z-index: -10;
+    }
+    header nav a:hover::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgba(var(--secondary-color));
+        position: absolute;
+        bottom: 0;
+        border-bottom: 3px solid rgb(var(--secondary-color));
+    }
 
 /* Hero section  */
 .hero-section {
@@ -125,8 +128,7 @@ header nav a:hover::before {
     width: 100%;
 }
 
-/* main content  */
-
+/* main section  */
 main {
     padding: 10px 50px;
 }
@@ -139,7 +141,6 @@ main {
     width: 100%;
     justify-content: space-between;
     margin: 30px 0px;
-
 }
 
 .section-title {
@@ -168,7 +169,6 @@ main {
     width: 100%;
     justify-content: space-between;
     margin: 30px 0px;
-
 }
 
 .projects {
@@ -189,6 +189,48 @@ main {
     color: rgb(var(--primary-color));
 }
 
+.project-container a {
+    box-shadow: 4px 4px 4px rgb(70, 70, 70);
+}
+
+.project-frame {
+    z-index: 5;
+}
+
+.project-frame img {
+    width: 150%;
+}
+
+/* project h2 and hover effect */
+.project-tag {
+    position: absolute;
+    z-index: 40;
+    bottom: 20px;
+    padding: 5px;
+    border-radius: 0px 10px 0px 0px;
+    background-color: rgb(var(--secondary-color));
+    box-shadow: 3px 3px 10px rgb(48, 48, 48);
+}
+.project-tag h3 {
+    font-size: 20px;
+}
+.gradient {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.062);
+    z-index: 20;
+    top: 0;
+    left: 0;
+    right: 0%;
+    bottom: 0;
+}
+.gradient:hover {
+    background-color: rgba(0, 0, 0, 0.349);
+}
+
+/* projects  */
 .surf-report {
     position: relative;
     width: 100%;
@@ -199,58 +241,6 @@ main {
     position: relative;
     width: 47%;
     height: 200px;
-}
-
-.surf-report {
-    background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%), 
-    /* url("/assets/images/surf-report.jpg"); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 1200px;
-    transition: background-image 0.2s, background-position 0.2s;
-}
-
-
-.calculator {
-    background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%), 
-    /* url("https://c4.wallpaperflare.com/wallpaper/854/214/410/accounting-black-budget-calculating-wallpaper-preview.jpg"); */
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 500px;
-    transition: background-image 0.2s, background-size 0.2s, background-position 0.2s;
-}
-
-.led-wall {
-    background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%), 
-    /* url("/assets/images/led-wall.jpg"); */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 500px;
-    transition: background-size 0.2s, background-position 0.2s;
-
-}
-
-
-
-.pastel-puzzle {
-    background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%), 
-    /* url("/assets/images/pastel-puzzle.jpg"); */
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: 500px;
-    transition: background-image 0.2s, background-size 0.2s;
-}
-
-
-
-
-.run-buddy {
-    background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 100%), 
-    /* url("/assets/images/run-buddy.jpg"); */
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: 600px;
-    transition: background-image 0.2s, background-size 0.2s;
 }
 
 /* contact section  */
@@ -320,7 +310,7 @@ footer {
 }
 
 /* media queries for screen sizes */
-/* screen =< 980px  */
+/* screen <= 980px  */
 @media screen and (max-width: 980px) {
     /* Header section  */
     header h1 a {
@@ -465,7 +455,6 @@ footer {
     }
 
     /* about section  */
-
     section {
         flex-direction: column;
         justify-content: center;
@@ -502,13 +491,9 @@ footer {
         margin: 0;
         padding: 10px 0px;
         line-height: 1.5;
-
     }
 
     /* work section  */
-
-
-    /* accessibility  */
     .project-frame img {
         width: 100%;
     }
@@ -574,8 +559,7 @@ footer {
         width: 100%;
         padding: 0;
     }
-
-    /* accessibility  */
+    
     .surf-report {
         height: 100px;
     }
@@ -584,52 +568,5 @@ footer {
         height: 100px;
     }
 
+
 }
-
-/* Accessibility  */
-.project-container a {
-    box-shadow: 4px 4px 10px rgb(70, 70, 70);
-}
-
-.project-frame {
-    z-index: 5;
-}
-
-.project-frame img {
-    width: 150%;
-}
-
-
-.project-tag {
-    position: absolute;
-    z-index: 10;
-    bottom: 20px;
-    padding: 5px;
-    border-radius: 0px 10px 0px 0px;
-    background-color: rgb(var(--secondary-color));
-    box-shadow: 3px 3px 10px rgb(48, 48, 48);
-}
-
-.project-tag h3 {
-    font-size: 20px;
-}
-
-.gradient {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,0) 46%, rgba(0,0,0,0.3329481450783438) 95%);
-    z-index: 20;
-    top: 0;
-    left: 0;
-    right: 0%;
-    bottom: 0;
-}
-
-.gradient:hover {
-    background: rgb(0,0,0);
-    background: radial-gradient(circle, rgba(0,0,0,0.32174366328562676) 46%, rgba(0,0,0,0.9015755960587359) 95%);
-}
-
