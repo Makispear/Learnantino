@@ -27,7 +27,6 @@ header {
     justify-content: space-between;
     background-color: rgba(var(--primary-color));
     padding: 5px 0 10px 0;
-    box-shadow: 5px 5px 5px rgb(39, 39, 39);
     z-index: 9999;
 }
 
@@ -150,6 +149,7 @@ main {
     border-right: 5px solid;
     padding: 10px;
 }
+
 
 .about-section p {
     margin: 10px;
